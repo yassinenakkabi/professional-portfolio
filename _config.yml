@@ -6,17 +6,7 @@ url: "https://waruimoojin.github.io" # use your GitHub Pages URL
 theme: minima
 # If you want to use minima with custom navigation, ensure _data/navigation.yml exists
 
-author:
-  name: "Waruim Oojin"
-  avatar: "/assets/images/eren.png" # optional, if you upload your avatar image
-  bio: "DevOps Engineer passionate about automation, cloud infrastructure, and CI/CD."
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/waruimoojin"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url: "https://gitlab.com/waruimoojin"
+
 
 show_excerpts: true # Show post excerpts on the homepage
 paginate: 5         # Posts shown per page
