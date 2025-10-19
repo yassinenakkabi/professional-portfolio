@@ -8,7 +8,7 @@ theme: minima
 
 author:
   name: "Waruim Oojin"
-  avatar: "/assets/images/avatar.png" # optional, if you upload your avatar image
+  avatar: "/assets/images/eren.png" # optional, if you upload your avatar image
   bio: "DevOps Engineer passionate about automation, cloud infrastructure, and CI/CD."
   links:
     - label: "GitHub"

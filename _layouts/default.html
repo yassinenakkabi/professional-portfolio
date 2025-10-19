@@ -1,0 +1,18 @@
+{% if site.author.name %}
+  <div class="author-profile">
+    <h2>{{ site.author.name }}</h2>
+    {% if site.author.avatar %}
+      <img src="{{ site.author.avatar }}" alt="{{ site.author.name }}" width="100">
+    {% endif %}
+    <p>{{ site.author.bio }}</p>
+    <ul>
+      {% for link in site.author.links %}
+        <li>
+          <a href="{{ link.url }}">
+            <i class="{{ link.icon }}"></i> {{ link.label }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}
