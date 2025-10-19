@@ -1,14 +1,17 @@
-# _config.yml
-
-# Tells GitHub Pages to use the minimal-mistakes-jekyll theme
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air" # Or "dark", "contrast", "dirt", etc.
-
-# --- Basic Site Settings ---
-title: "Waruim Oojin's DevOps Portfolio"
 name: "Waruim Oojin"
 description: "A DevOps Engineer passionate about automation, cloud infrastructure, and CI/CD."
 
+# --- Author Settings ---
+# This is used for the sidebar and other places
+author:
+  name: "Waruim Oojin"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/waruimoojin"
 # --- Header ---
 # Show the navigation links in the masthead
 masthead_nav: true
+
+# --- Navigation ---
+navigation:   _data/navigation.yml  
