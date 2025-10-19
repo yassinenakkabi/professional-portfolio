@@ -19,7 +19,7 @@ I built a robust, multi-stage solution using a suite of IaC tools to provision a
 3.  **Toolchain Deployment (Terraform):** With the K3s cluster's API available, a second **Terraform** project is used. This project leverages the Kubernetes and Helm providers to automatically deploy the entire DevOps toolchain (Jenkins, SonarQube, Prometheus, Grafana) as applications onto the cluster.
 
 ### Architecture Diagram
-![Toolchain Architecture](https://github.com/user-attachments/assets/1059a9dc-9ce4-4887-bfb5-b6e1e5b71058)
+![Toolchain Architecture](https://yourdomain.com/path/to/image.png)
 *(We'll create this in the next step!)*
 
 ## Tools & Technologies
