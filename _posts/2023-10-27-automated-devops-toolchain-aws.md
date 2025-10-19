@@ -33,6 +33,6 @@ I built a robust, multi-stage solution using a suite of IaC tools to provision a
 *   **Eliminated Configuration Drift:** Guaranteed identical environments for dev, staging, and prod.
 
 ## Source Code
-*   [Terraform AWS Modules on GitHub](https://github.com/waruimoojin/terraform-aws-modules)
-*   [Ansible Roles on GitHub](https://github.com/waruimoojin/ansible-roles)
-*   [Packer Images on GitHub](https://github.com/waruimoojin/packer-images)
+*   [Terraform on GitHub](https://github.com/waruimoojin/terraform)
+*   [Ansible Roles on GitHub](https://github.com/waruimoojin/k3s-ansible)
+
