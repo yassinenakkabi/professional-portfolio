@@ -1,8 +1,6 @@
 name: "Waruim Oojin"
 description: "A DevOps Engineer passionate about automation, cloud infrastructure, and CI/CD."
 
-# --- Author Settings ---
-# This is used for the sidebar and other places
 author:
   name: "Waruim Oojin"
   links:
@@ -10,10 +8,5 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/waruimoojin"
 
-
-# --- Navigation ---
-navigation:   _data/navigation.yml  
-
-# --- Header ---
-# Show the navigation links in the masthead
 masthead_nav: true
+# Remove navigation: _data/navigation.yml
