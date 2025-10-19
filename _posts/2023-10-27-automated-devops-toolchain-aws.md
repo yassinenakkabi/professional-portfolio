@@ -20,7 +20,7 @@ I built a robust, multi-stage solution using a suite of IaC tools to provision a
 
 ### Architecture Diagram
 ![Toolchain Architecture](/assets/images/image.jpg)
-*(We'll create this in the next step!)*
+
 
 ## Tools & Technologies
 *   **IaC:** Terraform
