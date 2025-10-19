@@ -1,7 +1,7 @@
 ---
 title: "Project: Automated DevOps Toolchain on AWS"
 date: 2023-10-27
-tags: [AWS, Terraform, Ansible, Packer, CI/CD]
+tags: [AWS, Terraform, Ansible, CI/CD]
 ---
 
 ## Summary
@@ -13,9 +13,8 @@ Setting up a consistent and secure environment for a DevOps toolchain is often a
 ## My Solution & Architecture
 I built a robust solution using a suite of IaC tools to ensure consistency, security, and speed.
 
-1.  **Golden Image Creation (Packer):** Used **Packer** to create a standardized Amazon Machine Image (AMI) pre-configured with security hardening. This ensures all servers start from a consistent baseline.
-2.  **Core Infrastructure (Terraform):** The entire network (VPC, Subnets, Security Groups) and compute infrastructure (EC2 instances) is defined with **Terraform**, making it version-controlled and easily reproducible.
-3.  **Tool Installation (Ansible):** Once instances are running, **Ansible** roles automatically install and configure Jenkins, SonarQube, and Prometheus.
+1.  **Core Infrastructure (Terraform):** The entire network (VPC, Subnets, Security Groups) and compute infrastructure (EC2 instances) is defined with **Terraform**, making it version-controlled and easily reproducible.
+2.  **Tool Installation (Ansible):** Once instances are running, **Ansible** roles automatically install and configure Jenkins, SonarQube, and Prometheus.
 
 ### Architecture Diagram
 ![Toolchain Architecture](https://link-to-your-diagram-image.com/diagram.png)
@@ -23,7 +22,7 @@ I built a robust solution using a suite of IaC tools to ensure consistency, secu
 
 ## Tools & Technologies
 *   **Cloud:** AWS (EC2, VPC, S3)
-*   **IaC:** Terraform, Packer
+*   **IaC:** Terraform
 *   **Configuration Management:** Ansible
 *   **Tools:** Jenkins, SonarQube, Prometheus
 
