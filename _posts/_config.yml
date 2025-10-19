@@ -1,5 +1,6 @@
 name: "Waruim Oojin"
 description: "A DevOps Engineer passionate about automation, cloud infrastructure, and CI/CD."
+theme: jekyll-theme-cayman
 
 author:
   name: "Waruim Oojin"
