@@ -1,226 +1,162 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yassine Nakkabi | Automate. Deploy. Innovate.</title>
- <link rel="icon" href="assets/images/devops.png" type="image/png">
-  <link rel="shortcut icon" href="assets/images/devops.png" type="image/x-icon">
-  <!-- TailwindCSS + Lucide Icons -->
+  <link rel="icon" href="assets/images/devops.png" type="image/png" />
+
+  <!-- TailwindCSS & Lucide Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-<style>
-  /* ===== Import Google Font: Saira ===== */
-  @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
 
-  /* ===== Base Styles ===== */
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: "Saira", sans-serif;
-    background: linear-gradient(180deg, #0a0f1f, #000);
-    color: #e2e8f0;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    line-height: 1.6;
-  }
-
-  h1, h2, h3, p, a, button {
-    font-family: "Saira", sans-serif;
-  }
-
-  /* ===== Gradient Text ===== */
-  .gradient-text {
-    background: linear-gradient(90deg, #6366f1, #3b82f6, #06b6d4, #9333ea);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 300% auto;
-    animation: gradientSlide 6s ease-in-out infinite;
-    font-weight: 700;
-    text-shadow: 0 0 10px rgba(99,102,241,0.25);
-  }
-
-  @keyframes gradientSlide {
-    0% { background-position: 0% center; }
-    50% { background-position: 100% center; }
-    100% { background-position: 0% center; }
-  }
-
-  /* ===== Header Section ===== */
-  header {
-    animation: fadeInHeader 1s ease-out;
-    background: rgba(15, 23, 42, 0.7);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(99,102,241,0.3);
-    border-radius: 14px;
-    padding: 1rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 50;
-  }
-
-  @keyframes fadeInHeader {
-    from { opacity: 0; transform: translateY(-25px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* ===== Navigation Links ===== */
-  nav a {
-    position: relative;
-    color: #cbd5e1;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-
-  nav a::after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #06b6d4, #9333ea);
-    transition: width 0.4s ease;
-  }
-
-  nav a:hover {
-    color: #06b6d4;
-    transform: translateY(-2px);
-  }
-
-  nav a:hover::after {
-    width: 100%;
-  }
-
-  /* ===== Button Glow Effect ===== */
-  .glow {
-    box-shadow: 0 0 10px rgba(99,102,241,0.4),
-                inset 0 0 5px rgba(6,182,212,0.2);
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px;
-  }
-
-  .glow:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(147,51,234,0.5),
-                inset 0 0 10px rgba(6,182,212,0.3);
-  }
-
-  /* ===== Fade-In Sections ===== */
-  section {
-    animation: fadeUp 1.3s ease forwards;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(25px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* ===== Animated Titles ===== */
-  .animated-title span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: wordFade 1s ease forwards;
-  }
-
-  .animated-title span:nth-child(1) {
-    animation-delay: 0.3s;
-  }
-  .animated-title span:nth-child(2) {
-    animation-delay: 0.8s;
-  }
-
-  @keyframes wordFade {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* ===== Animated Headings (all h2, h3) ===== */
-  h2, h3 {
-    animation: fadeTitle 1.2s ease-in-out forwards;
-  }
-
-  @keyframes fadeTitle {
-    from { opacity: 0; transform: translateY(15px) scale(0.97); }
-    to { opacity: 1; transform: translateY(0) scale(1); }
-  }
-</style>
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <style>
-    body { font-family: 'Space Grotesk', sans-serif; }
-    h1, h2, h3, .gradient-text { font-family: 'Poppins', sans-serif; }
+    body {
+      font-family: "Saira", sans-serif;
+      background: linear-gradient(180deg, #0a0f1f, #000);
+      color: #e2e8f0;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
 
     .gradient-text {
-      background: linear-gradient(90deg, #8b5cf6, #3b82f6, #06b6d4);
+      background: linear-gradient(90deg, #6366f1, #3b82f6, #06b6d4, #9333ea);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-size: 200% auto;
-      animation: gradientShift 5s ease infinite;
+      background-size: 300% auto;
+      animation: gradientSlide 6s ease-in-out infinite;
+      font-weight: 700;
     }
-    @keyframes gradientShift {
+
+    @keyframes gradientSlide {
       0% { background-position: 0% center; }
-      100% { background-position: 100% center; }
+      50% { background-position: 100% center; }
+      100% { background-position: 0% center; }
     }
-    .glow { box-shadow: 0 0 15px rgba(99,102,241,0.6); }
+
+    header {
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 14px;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      animation: fadeInHeader 1s ease-out;
+    }
+
+    @keyframes fadeInHeader {
+      from { opacity: 0; transform: translateY(-25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav a {
+      color: #cbd5e1;
+      font-weight: 500;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #06b6d4, #9333ea);
+      transition: width 0.4s ease;
+    }
+
+    nav a:hover {
+      color: #06b6d4;
+      transform: translateY(-2px);
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    #menu-btn span {
+      transition: all 0.3s ease;
+    }
+
+    #menu-btn.open span:nth-child(1) {
+      transform: rotate(45deg) translateY(6px);
+    }
+    #menu-btn.open span:nth-child(2) {
+      opacity: 0;
+    }
+    #menu-btn.open span:nth-child(3) {
+      transform: rotate(-45deg) translateY(-6px);
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slideDown {
+      animation: slideDown 0.3s ease forwards;
+    }
   </style>
 </head>
 
 <body class="bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-200">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <!-- HEADER -->
-    <header class="flex justify-between items-center py-6">
+    <!-- ✅ UNIQUE HEADER -->
+    <header class="flex justify-between items-center py-6 relative">
       <div class="flex items-center space-x-2">
         <i data-lucide="terminal" class="w-6 h-6 text-indigo-400"></i>
         <a href="#" class="text-3xl font-extrabold gradient-text">Yassine Nakkabi</a>
       </div>
 
+      <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-6">
-        <a href="#projects" class="flex items-center gap-1 hover:text-indigo-400 transition-colors"><i data-lucide="code" class="w-5 h-5"></i> Projects</a>
-        <a href="#info" class="flex items-center gap-1 hover:text-indigo-400 transition-colors"><i data-lucide="id-card" class="w-5 h-5"></i> Info</a>
-        <a href="#about" class="flex items-center gap-1 hover:text-indigo-400 transition-colors"><i data-lucide="user" class="w-5 h-5"></i> About</a>
-        <a href="#education" class="flex items-center gap-1 hover:text-indigo-400 transition-colors"><i data-lucide="book-open" class="w-5 h-5"></i> Education</a>
-        <!-- ✅ New “Skills” Section -->
-    <a href="#skills" class="flex items-center gap-1 hover:text-indigo-400 transition-colors">
-      <i data-lucide="cpu" class="w-5 h-5"></i> Skills
-    </a>
-        <a href="#contact" class="flex items-center gap-1 hover:text-indigo-400 transition-colors"><i data-lucide="mail" class="w-5 h-5"></i> Contact</a>
+        <a href="#projects" class="flex items-center gap-1 hover:text-cyan-400"><i data-lucide="code" class="w-5 h-5"></i> Projects</a>
+        <a href="#info" class="flex items-center gap-1 hover:text-cyan-400"><i data-lucide="id-card" class="w-5 h-5"></i> Info</a>
+        <a href="#about" class="flex items-center gap-1 hover:text-cyan-400"><i data-lucide="user" class="w-5 h-5"></i> About</a>
+        <a href="#education" class="flex items-center gap-1 hover:text-cyan-400"><i data-lucide="book-open" class="w-5 h-5"></i> Education</a>
+        <a href="#skills" class="flex items-center gap-1 hover:text-cyan-400"><i data-lucide="cpu" class="w-5 h-5"></i> Skills</a>
+        <a href="#contact" class="flex items-center gap-1 hover:text-cyan-400"><i data-lucide="mail" class="w-5 h-5"></i> Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden flex flex-col justify-center space-y-1 focus:outline-none transition-transform">
+        <span class="w-6 h-0.5 bg-cyan-400"></span>
+        <span class="w-6 h-0.5 bg-cyan-400"></span>
+        <span class="w-6 h-0.5 bg-cyan-400"></span>
+      </button>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-gray-900/95 backdrop-blur-lg border-t border-indigo-700 flex-col text-center space-y-4 py-6 md:hidden">
+        <a href="#projects" class="block hover:text-cyan-400">Projects</a>
+        <a href="#info" class="block hover:text-cyan-400">Info</a>
+        <a href="#about" class="block hover:text-cyan-400">About</a>
+        <a href="#education" class="block hover:text-cyan-400">Education</a>
+        <a href="#skills" class="block hover:text-cyan-400">Skills</a>
+        <a href="#contact" class="block hover:text-cyan-400">Contact</a>
       </nav>
     </header>
-<!-- HERO -->
-<section class="text-center py-20 hero-section">
-  <p class="text-gray-400 text-lg mb-3 fade-in">Welcome to my professional portfolio 🌍</p>
 
-  <!-- Animated Title -->
-  <h1 class="text-5xl md:text-6xl font-extrabold animated-title">
-    <span class="text-gray-400">Hi, I'm</span>
-    <span class="gradient-text ml-3 glow-animated">Yassine</span>
-    <span class="gradient-text ml-2 glow-animated">Nakkabi</span>
-  </h1>
-
-  <h2 class="mt-4 text-2xl md:text-3xl font-semibold text-indigo-400 fade-in-delay">
-    <i data-lucide="infinity" class="inline w-6 h-6 align-text-bottom text-cyan-400"></i>
-    DevOps Engineer
-  </h2>
-
-  <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400 fade-in-delay2">
-    I automate deployments, optimize cloud infrastructure, and build scalable, secure systems that empower development teams.
-  </p>
-
-  <a href="#projects"
-     class="mt-10 inline-block bg-gradient-to-r from-indigo-600 to-cyan-500 hover:from-cyan-500 hover:to-indigo-600 text-white font-bold py-3 px-10 rounded-lg transition-transform transform hover:scale-110 glow">
-     <i data-lucide="rocket" class="inline w-5 h-5 mr-2"></i> View My Work
-  </a>
-</section>
+    <!-- HERO SECTION -->
+    <section class="text-center py-20">
+      <p class="text-gray-400 text-lg mb-2">Welcome to my professional portfolio 🌍</p>
+      <h1 class="text-5xl md:text-6xl font-extrabold">
+        <span class="text-gray-400">Hi, I'm</span> <span class="gradient-text">Yassine Nakkabi</span>
+      </h1>
+      <h2 class="mt-4 text-2xl md:text-3xl font-semibold text-indigo-400">
+        <i data-lucide="infinity" class="inline w-6 h-6 align-text-bottom text-cyan-400"></i>
+        DevOps Engineer
+      </h2>
+      <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400">
+        I automate deployments, optimize cloud infrastructure, and build scalable, secure systems that empower development teams.
+      </p>
+    </section>
 
 
     <!-- PERSONAL INFO -->
@@ -696,6 +632,20 @@
     }
     setInterval(changeTitle, 3000);
     document.title = titles[0];
+  </script>
+  <script>
+    lucide.createIcons();
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      menuBtn.classList.toggle("open");
+      if (!mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.add("animate-slideDown");
+      } else {
+        mobileMenu.classList.remove("animate-slideDown");
+      }
+    });
   </script>
 </body>
 </html>
