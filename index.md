@@ -1,6 +1,9 @@
----
-layout: home
-title: "Welcome"
----
-
-Hi, I'm Warui moojin. Explore my projects, blog posts, and more!
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
