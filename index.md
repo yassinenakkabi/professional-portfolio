@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    {{ content }}
-  </body>
-</html>
+---
+layout: page
+title: Home
+---
+
+Welcome to my portfolio!
+
+This is the homepage for my site. You can add any content you want here.
+
+Check out my [About](/about/) page to learn more about me.
