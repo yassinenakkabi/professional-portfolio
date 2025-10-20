@@ -1,10 +1,9 @@
 ---
-layout: page
-title: Home
+layout: default
 ---
 
-Welcome to my portfolio!
+## Hello World!
 
-This is the homepage for my site. You can add any content you want here.
+This is my portfolio. I am fixing the blank page.
 
-Check out my [About](/about/) page to learn more about me.
+If you can see this, it is working!
