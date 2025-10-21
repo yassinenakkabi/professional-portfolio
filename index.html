@@ -56,20 +56,49 @@
       </nav>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="text-center py-20">
-      <p class="text-gray-400 text-lg mb-2">Welcome to my professional portfolio 🌍</p>
-      <h1 class="text-5xl md:text-6xl font-extrabold">
-        <span class="text-gray-400">Hi, I'm</span> <span class="gradient-text">Yassine Nakkabi</span>
-      </h1>
-      <h2 class="mt-4 text-2xl md:text-3xl font-semibold text-indigo-400">
-        <i data-lucide="infinity" class="inline w-6 h-6 align-text-bottom text-cyan-400"></i>
-        DevOps Engineer
-      </h2>
-      <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-400">
-        I automate deployments, optimize cloud infrastructure, and build scalable, secure systems that empower development teams.
-      </p>
-    </section>
+ <!-- HERO SECTION -->
+<section class="py-20 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
+  
+  <!-- 🧑‍💻 Texte à gauche -->
+  <div class="md:w-1/2 fade-in">
+    <p class="text-gray-400 text-lg mb-2">Welcome to my professional portfolio 🌍</p>
+
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-4 animated-title">
+      <span class="text-gray-400">Hi, I'm</span>
+      <span class="gradient-text"> Yassine Nakkabi</span>
+    </h1>
+
+    <h2 class="mt-2 text-2xl md:text-3xl font-semibold text-indigo-400 fade-in flex items-center gap-2">
+      <i data-lucide="infinity" class="w-6 h-6 text-cyan-400"></i>
+      DevOps Engineer
+    </h2>
+
+    <p class="mt-6 text-lg text-gray-400 leading-relaxed">
+      I automate deployments, optimize cloud infrastructure, and integrate AI-driven analytics  
+      to build scalable, secure, and intelligent systems that empower innovation.
+    </p>
+
+    <a href="#projects"
+       class="mt-8 inline-block bg-gradient-to-r from-indigo-600 to-cyan-500 hover:from-cyan-500 hover:to-indigo-600 text-white font-bold py-3 px-10 rounded-lg transition-transform transform hover:scale-110 glow fade-in">
+       <i data-lucide="rocket" class="inline w-5 h-5 mr-2"></i> View My Work
+    </a>
+  </div>
+
+  <!-- 📸 Image à droite -->
+  <div class="md:w-1/2 flex justify-center fade-in">
+    <div class="relative">
+      <!-- Halo lumineux animé -->
+      <div class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-cyan-400 to-purple-500 blur-2xl opacity-30 animate-pulse"></div>
+
+      <!-- Image principale -->
+      <img src="assets\images\ys.jpeg"
+           alt="Yassine Nakkabi"
+           class="relative w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-indigo-500 shadow-2xl transform hover:scale-105 hover:rotate-3 transition-all duration-700 ease-out">
+    </div>
+  </div>
+</section>
+
+
 
 
     <!-- PERSONAL INFO -->
@@ -265,14 +294,14 @@
       <div class="edu-content">
         <h3>💻 Software Engineering – HighTech School Rabat</h3>
         <p class="edu-date">2024 – 2026</p>
-        <p>
-          Specialized in <span class="highlight">DevOps, Cloud, and Software Architecture</span>.
-          Training in <span class="highlight">CI/CD pipelines</span>, 
-          <span class="highlight">Docker</span>, 
-          <span class="highlight">Kubernetes</span>, and scalable deployments.
-        </p>
-      </div>
-    </div>
+    <p>
+      Specialized in <span class="highlight">Software Development, Data Science, and Cloud Computing</span>.  
+      Focused on <span class="highlight">DevOps automation, Power BI analytics, and AI/Machine Learning</span> integration  
+      for scalable and intelligent enterprise systems.  
+      Trained to design, deploy, and optimize software solutions across multi-cloud and hybrid environments.
+    </p>
+  </div>
+</div>
 
     <!-- ⚙️ Bachelor DevOps -->
     <div class="timeline-item fade-in">
@@ -341,16 +370,15 @@
     <div class="timeline-item fade-in">
       <img src="assets\images\FRA.webp" alt="Royal Air School Logo" class="edu-logo">
       <div class="edu-content">
-        <h3>✈️ Certificate in Aircraft Maintenance (B1) – Royal Air School Marrakech</h3>
-        <p class="edu-date">2016 – 2019</p>
-        <p>
-          Specialized in <span class="highlight">mechanical systems</span>, 
-          <span class="highlight">hydraulics</span>, and 
-          <span class="highlight">maintenance planning</span>.
-          Gained precision and discipline within the Royal Air Force structure.
-        </p>
-      </div>
-    </div>
+         <h3>✈️ Aircraft Engineering – Royal Air School Marrakech</h3>
+    <p class="edu-date">2016 – 2019</p>
+    <p>
+      Specialized in <span class="highlight">aircraft systems, hydraulics, and maintenance engineering</span>.
+      Trained under the rigorous standards of the <span class="highlight">Royal Moroccan Air Force</span>, 
+      developing precision, technical expertise, and military discipline essential for aviation excellence.
+    </p>
+  </div>
+</div>
 
     <!-- 🧪 High School -->
     <div class="timeline-item fade-in">
