@@ -60,3 +60,30 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("mouseleave", () => link.classList.remove("glow"));
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const number = "+212 6 63 72 ** **";
+  const phoneSpan = document.getElementById("phone-number");
+
+  let i = 0;
+  function type() {
+    if (i < number.length) {
+      phoneSpan.textContent += number.charAt(i);
+      i++;
+      setTimeout(type, 100);
+    }
+  }
+
+  type(); // lancement de l'effet de frappe
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ageDisplay = document.getElementById("age-display");
+  let count = 0;
+  const target = 28;
+  const interval = setInterval(() => {
+    count++;
+    ageDisplay.textContent = count;
+    if (count >= target) clearInterval(interval);
+  }, 80);
+});

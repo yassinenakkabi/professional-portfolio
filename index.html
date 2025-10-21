@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yassine Nakkabi | Automate. Deploy. Innovate.</title>
-  <link rel="icon" href="assets/images/devops.png" type="image/png" />
+  <link rel="icon" href="" type="image/png" />
 
   <!-- TailwindCSS & Lucide Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -102,20 +102,52 @@
 
 
     <!-- PERSONAL INFO -->
-    <section id="info" class="py-12 bg-gray-800/60 rounded-2xl shadow-lg backdrop-blur-md mt-8">
-      <h2 class="text-3xl font-bold text-center mb-10 gradient-text flex items-center justify-center gap-2">
-        <i data-lucide="id-card" class="w-7 h-7 text-cyan-400"></i> Personal Information
-      </h2>
+   <section id="info" class="py-12 bg-gray-800/60 rounded-2xl shadow-lg backdrop-blur-md mt-8">
+  <h2 class="text-3xl font-bold text-center mb-10 gradient-text flex items-center justify-center gap-2">
+    <i data-lucide="id-card" class="w-7 h-7 text-cyan-400"></i> Personal Information
+  </h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto text-gray-300 text-lg">
-        <div class="flex items-center gap-3"><i data-lucide="phone" class="w-5 h-5 text-indigo-400"></i> <span><strong></strong> +212 6 63 72 ** **</span></div>
-        <div class="flex items-center gap-3"><i data-lucide="mail" class="w-5 h-5 text-indigo-400"></i> <span><strong></strong> yassinenakkabi@gmail.com</span></div>
-        <div class="flex items-center gap-3"><i data-lucide="linkedin" class="w-5 h-5 text-indigo-400"></i> <a href="https://www.linkedin.com/in/yassine-nakkabi/" target="_blank" class="hover:text-cyan-400 transition-colors">Yassine Nakkabi</a></div>
-        <div class="flex items-center gap-3"><i data-lucide="instagram" class="w-5 h-5 text-indigo-400"></i> <a href="https://www.instagram.com/yassine.nakkabi" target="_blank" class="hover:text-cyan-400 transition-colors">Yassine Nakkabi</a></div>
-        <div class="flex items-center gap-3"><i data-lucide="calendar" class="w-5 h-5 text-indigo-400"></i> <span><strong></strong> 28 years</span></div>
-        <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-indigo-400"></i> <span><strong></strong> Fez, Morocco</span></div>
-      </div>
-    </section>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto text-gray-300 text-lg">
+
+    <!-- ✨ Phone with typing + reflection -->
+    <div class="info-item typing-effect">
+      <i data-lucide="phone" class="icon-glow"></i>
+      <span id="phone-number"></span>
+      <div class="light-reflect"></div>
+    </div>
+
+    <div class="info-item email-pulse">
+  <i data-lucide="mail" class="icon-glow"></i>
+  <span>yassinenakkabi@gmail.com</span>
+</div>
+
+    <div class="info-item link-underline">
+  <i data-lucide="linkedin" class="icon-glow"></i>
+  <a href="https://www.linkedin.com/in/yassine-nakkabi/" target="_blank">Yassine Nakkabi</a>
+</div>
+
+
+   <div class="info-item instagram-gradient">
+  <i data-lucide="instagram" class="icon-glow"></i>
+  <a href="https://www.instagram.com/yassine.nakkabi" target="_blank">Yassine Nakkabi</a>
+</div>
+
+
+    <div class="info-item age-counter">
+  <i data-lucide="calendar" class="icon-glow"></i>
+  <span id="age-display">0</span> years
+</div>
+
+
+    <div class="info-item location-radar">
+  <i data-lucide="map-pin" class="icon-glow"></i>
+  <span>Fez, Morocco</span>
+</div>
+
+
+  </div>
+</section>
+
 
     <!-- ABOUT -->
 <section id="about" class="py-20 text-center">
@@ -157,112 +189,87 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-   
-
-    <!-- Jenkins CI/CD + SonarQube -->
-    <div class="bg-gray-800/80 backdrop-blur-md rounded-xl p-6 border border-indigo-600 hover:border-cyan-400 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/40">
-      <h3 class="text-2xl font-bold mb-2 text-indigo-400 flex items-center gap-2">
-        <i data-lucide="settings" class="w-5 h-5"></i> Jenkins CI/CD with SonarQube
+    <!-- 🚀 Jenkins CI/CD -->
+    <div class="project-card">
+      <h3 class="project-title">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" class="icon-sm">
+        CI/CD Pipeline with Jenkins & Docker
       </h3>
-      <p class="text-gray-400">Automated CI/CD pipeline with Jenkins, integrated with SonarQube for continuous code quality inspection and Dockerized deployment.</p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <span class="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full">Jenkins</span>
-        <span class="bg-yellow-900 text-yellow-300 text-xs px-3 py-1 rounded-full">SonarQube</span>
-        <span class="bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full">Docker</span>
+      <p class="text-gray-400">
+        Designed and implemented a complete CI/CD pipeline using Jenkins, Docker, and Kubernetes to automate deployment and testing workflows.
+      </p>
+      <div class="tech-list">
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" class="icon-sm"> Jenkins</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="icon-sm"> Docker</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" class="icon-sm"> Kubernetes</span>
       </div>
-      <a href="https://github.com/yassinenakkabi/Jenkins_CI_CD_With_SonarqubeProject" target="_blank"
-         class="inline-block mt-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold py-2 px-4 rounded-lg transition-all glow">
-         <i data-lucide="github" class="inline w-5 h-5 mr-1"></i> GitHub
+      <a href="https://github.com/yassinenakkabi/Jenkins_CI_CD_With_SonarqubeProject" target="_blank" class="github-btn mt-5">
+        <i data-lucide="github"></i> GitHub
       </a>
     </div>
 
-    <!-- Full DevOps CICD Project -->
-    <div class="bg-gray-800/80 backdrop-blur-md rounded-xl p-6 border border-indigo-600 hover:border-cyan-400 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/40">
-      <h3 class="text-2xl font-bold mb-2 text-indigo-400 flex items-center gap-2">
-        <i data-lucide="zap" class="w-5 h-5"></i> Complete CI/CD DevOps Project
+    <!-- ⚙️ Ansible Automation -->
+    <div class="project-card">
+      <h3 class="project-title">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible" class="icon-sm">
+        Infrastructure Automation with Ansible
       </h3>
-      <p class="text-gray-400">Designed a full CI/CD pipeline integrating Jenkins, Docker, Kubernetes, and GitHub for automated builds, testing, and deployments.</p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <span class="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full">CI/CD</span>
-        <span class="bg-yellow-900 text-yellow-300 text-xs px-3 py-1 rounded-full">Jenkins</span>
-        <span class="bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full">Kubernetes</span>
+      <p class="text-gray-400">
+        Automated server configuration and deployment using Ansible roles and dynamic inventories for reproducible DevOps environments.
+      </p>
+      <div class="tech-list">
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" class="icon-sm"> Ansible</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="icon-sm"> Linux</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon-sm"> Git</span>
       </div>
-      <a href="https://github.com/yassinenakkabi/CICD_DevOpsProject" target="_blank"
-         class="inline-block mt-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold py-2 px-4 rounded-lg transition-all glow">
-         <i data-lucide="github" class="inline w-5 h-5 mr-1"></i> GitHub
+      <a href="https://github.com/yassinenakkabi/projet_ansible" target="_blank" class="github-btn mt-5">
+        <i data-lucide="github"></i> GitHub
       </a>
     </div>
 
-    <!-- Docker Project -->
-    <div class="bg-gray-800/80 backdrop-blur-md rounded-xl p-6 border border-indigo-600 hover:border-cyan-400 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/40">
-      <h3 class="text-2xl font-bold mb-2 text-indigo-400 flex items-center gap-2">
-        <i data-lucide="box" class="w-5 h-5"></i> Docker Containerization Project
+    <!-- ☁️ Terraform AWS -->
+    <div class="project-card">
+      <h3 class="project-title">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" class="icon-sm">
+        Terraform AWS Infrastructure
       </h3>
-      <p class="text-gray-400">Containerized a multi-service application using Docker Compose for scalable local development and testing.</p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <span class="bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full">Docker</span>
-        <span class="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full">Containers</span>
-        <span class="bg-cyan-900 text-cyan-300 text-xs px-3 py-1 rounded-full">DevOps</span>
+      <p class="text-gray-400">
+        Infrastructure as Code (IaC) using Terraform to provision AWS EC2, S3, and VPC networks in a scalable, automated way.
+      </p>
+      <div class="tech-list">
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" class="icon-sm"> Terraform</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" class="icon-sm"> AWS</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon-sm"> Python</span>
       </div>
-      <a href="https://github.com/yassinenakkabi/Docker_Projet" target="_blank"
-         class="inline-block mt-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold py-2 px-4 rounded-lg transition-all glow">
-         <i data-lucide="github" class="inline w-5 h-5 mr-1"></i> GitHub
+      <a href="https://github.com/yassinenakkabi/iac" target="_blank" class="github-btn mt-5">
+        <i data-lucide="github"></i> GitHub
       </a>
     </div>
 
-    <!-- Ansible Automation Project -->
-    <div class="bg-gray-800/80 backdrop-blur-md rounded-xl p-6 border border-indigo-600 hover:border-cyan-400 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/40">
-      <h3 class="text-2xl font-bold mb-2 text-indigo-400 flex items-center gap-2">
-        <i data-lucide="file-cog" class="w-5 h-5"></i> Ansible Infrastructure Automation
+    <!-- 🧩 Docker Todo App -->
+    <div class="project-card">
+      <h3 class="project-title">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="icon-sm">
+        DevOps Project – Todo App with LocalStorage
       </h3>
-      <p class="text-gray-400">Automated multi-server environment configuration using Ansible roles and inventory for CI/CD, monitoring, and deployment servers.</p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <span class="bg-indigo-900 text-indigo-300 text-xs px-3 py-1 rounded-full">Ansible</span>
-        <span class="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full">Automation</span>
-        <span class="bg-purple-900 text-purple-300 text-xs px-3 py-1 rounded-full">CI/CD</span>
+      <p class="text-gray-400">
+        Built a containerized full-stack Todo app integrating DevOps best practices and local persistent data handling.
+      </p>
+      <div class="tech-list">
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" class="icon-sm"> Docker</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon-sm"> JavaScript</span>
+        <span class="tech-tag"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="icon-sm"> HTML5</span>
       </div>
-      <a href="https://github.com/yassinenakkabi/projet_ansible" target="_blank"
-         class="inline-block mt-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold py-2 px-4 rounded-lg transition-all glow">
-         <i data-lucide="github" class="inline w-5 h-5 mr-1"></i> GitHub
-      </a>
-    </div>
-
-    <!-- Infrastructure as Code (IaC) -->
-    <div class="bg-gray-800/80 backdrop-blur-md rounded-xl p-6 border border-indigo-600 hover:border-cyan-400 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/40">
-      <h3 class="text-2xl font-bold mb-2 text-indigo-400 flex items-center gap-2">
-        <i data-lucide="code-2" class="w-5 h-5"></i> Infrastructure as Code (IaC)
-      </h3>
-      <p class="text-gray-400">Developed reusable Terraform and Ansible templates for provisioning infrastructure in local and cloud environments.</p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <span class="bg-purple-900 text-purple-300 text-xs px-3 py-1 rounded-full">Terraform</span>
-        <span class="bg-indigo-900 text-indigo-300 text-xs px-3 py-1 rounded-full">Ansible</span>
-        <span class="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full">IaC</span>
-      </div>
-      <a href="https://github.com/yassinenakkabi/iac" target="_blank"
-         class="inline-block mt-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold py-2 px-4 rounded-lg transition-all glow">
-         <i data-lucide="github" class="inline w-5 h-5 mr-1"></i> GitHub
-      </a>
-    </div>
-
-    <!-- DevOps Todo List App -->
-    <div class="bg-gray-800/80 backdrop-blur-md rounded-xl p-6 border border-indigo-600 hover:border-cyan-400 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-600/40">
-      <h3 class="text-2xl font-bold mb-2 text-indigo-400 flex items-center gap-2">
-        <i data-lucide="list-todo" class="w-5 h-5"></i> DevOps To-Do App with LocalStorage
-      </h3>
-      <p class="text-gray-400">Developed a responsive To-Do List web app using HTML, CSS, and JavaScript, with persistent data storage in the browser.</p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <span class="bg-yellow-900 text-yellow-300 text-xs px-3 py-1 rounded-full">JavaScript</span>
-        <span class="bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full">Frontend</span>
-        <span class="bg-gray-900 text-gray-300 text-xs px-3 py-1 rounded-full">LocalStorage</span>
-      </div>
-      <a href="https://github.com/yassinenakkabi/DevOps-Project-Todo-List-With-LocalStorage" target="_blank"
-         class="inline-block mt-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold py-2 px-4 rounded-lg transition-all glow">
-         <i data-lucide="github" class="inline w-5 h-5 mr-1"></i> GitHub
+      <a href="https://github.com/yassinenakkabi/DevOps-Project-Todo-List-With-LocalStorage" target="_blank" class="github-btn mt-5">
+        <i data-lucide="github"></i> GitHub
       </a>
     </div>
 
   </div>
 </section>
+
+
+
 
 
 <!-- 🎓 EDUCATION SECTION -->
@@ -561,6 +568,17 @@
 </footer>
 
   </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".timeline-item");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add("visible");
+    });
+  }, { threshold: 0.2 });
+  items.forEach(item => observer.observe(item));
+});
+</script>
 
   <script src="assets/js/script.js"></script>
 
