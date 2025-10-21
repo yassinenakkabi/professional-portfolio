@@ -12,97 +12,9 @@
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <style>
-    body {
-      font-family: "Saira", sans-serif;
-      background: linear-gradient(180deg, #0a0f1f, #000);
-      color: #e2e8f0;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
 
-    .gradient-text {
-      background: linear-gradient(90deg, #6366f1, #3b82f6, #06b6d4, #9333ea);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 300% auto;
-      animation: gradientSlide 6s ease-in-out infinite;
-      font-weight: 700;
-    }
-
-    @keyframes gradientSlide {
-      0% { background-position: 0% center; }
-      50% { background-position: 100% center; }
-      100% { background-position: 0% center; }
-    }
-
-    header {
-      background: rgba(15, 23, 42, 0.7);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(99, 102, 241, 0.3);
-      border-radius: 14px;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      animation: fadeInHeader 1s ease-out;
-    }
-
-    @keyframes fadeInHeader {
-      from { opacity: 0; transform: translateY(-25px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    nav a {
-      color: #cbd5e1;
-      font-weight: 500;
-      position: relative;
-      transition: all 0.3s ease;
-    }
-
-    nav a::after {
-      content: "";
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #06b6d4, #9333ea);
-      transition: width 0.4s ease;
-    }
-
-    nav a:hover {
-      color: #06b6d4;
-      transform: translateY(-2px);
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    #menu-btn span {
-      transition: all 0.3s ease;
-    }
-
-    #menu-btn.open span:nth-child(1) {
-      transform: rotate(45deg) translateY(6px);
-    }
-    #menu-btn.open span:nth-child(2) {
-      opacity: 0;
-    }
-    #menu-btn.open span:nth-child(3) {
-      transform: rotate(-45deg) translateY(-6px);
-    }
-
-    @keyframes slideDown {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-slideDown {
-      animation: slideDown 0.3s ease forwards;
-    }
-  </style>
 </head>
 
 <body class="bg-gradient-to-b from-gray-900 via-black to-gray-900 text-gray-200">
@@ -325,164 +237,140 @@
 
 
 <!-- 🎓 EDUCATION SECTION -->
-<section id="education" class="py-20 bg-gray-800/70 rounded-xl shadow-lg mt-10 backdrop-blur-md">
+<section id="education" class="py-20 bg-gray-800/70 rounded-xl shadow-lg mt-10 backdrop-blur-md relative overflow-hidden">
   <h2 class="text-4xl font-bold text-center mb-14 gradient-text flex items-center justify-center gap-2">
-    <i data-lucide="graduation-cap" class="w-8 h-8 text-indigo-400"></i> Education
+    <i data-lucide="graduation-cap" class="w-8 h-8 text-indigo-400"></i> My Education
   </h2>
 
-  <div class="relative max-w-3xl mx-auto pl-6 border-l-4 border-indigo-500 space-y-12">
+  <div class="timeline-container max-w-5xl mx-auto space-y-14 px-6">
 
-    <!-- 1. Master MIAGE -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="layers" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2024 – 2026</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="briefcase" class="w-5 h-5 text-cyan-400"></i>
-          Master’s in Applied Computer Methods for Business Management (MIAGE)
-        </h3>
-        <p class="text-gray-300 font-medium">Claude Bernard Lyon 1 University</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          A multidisciplinary program combining computer science, applied mathematics, and management.
-          Focused on designing and managing complex IT systems aligned with business strategy and digital transformation.
+    <!-- 🎓 Master MIAGE -->
+    <div class="timeline-item fade-in">
+      <img src="assets/images/lyon1_logo.webp" alt="Lyon 1 Logo" class="edu-logo">
+      <div class="edu-content">
+        <h3>🎓 Master MIAGE – Claude Bernard Lyon 1 University</h3>
+        <p class="edu-date">2024 – 2026</p>
+        <p>
+          Multidisciplinary Master's program in <span class="highlight">Applied Computer Methods for Business Management (MIAGE)</span>.
+          Focused on <span class="highlight">software architecture</span>, 
+          <span class="highlight">data systems</span>, and 
+          <span class="highlight">business intelligence</span> supporting digital transformation.
         </p>
       </div>
     </div>
 
-    <!-- 2. Engineering Degree -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="workflow" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2024 – 2026</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="code" class="w-5 h-5 text-cyan-400"></i>
-          Engineering Degree in Software Engineering
-        </h3>
-        <p class="text-gray-300 font-medium">High Tech School – Rabat</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          Focused on software architecture, programming, DevOps, and automation.
-          Prepares professionals for large-scale software design, cloud deployment, and CI/CD environments.
+    <!-- 💻 Engineering Degree -->
+    <div class="timeline-item fade-in">
+      <img src="assets\images\hightech_logo.jpeg" alt="HighTech School Logo" class="edu-logo">
+      <div class="edu-content">
+        <h3>💻 Software Engineering – HighTech School Rabat</h3>
+        <p class="edu-date">2024 – 2026</p>
+        <p>
+          Specialized in <span class="highlight">DevOps, Cloud, and Software Architecture</span>.
+          Training in <span class="highlight">CI/CD pipelines</span>, 
+          <span class="highlight">Docker</span>, 
+          <span class="highlight">Kubernetes</span>, and scalable deployments.
         </p>
       </div>
     </div>
 
-    <!-- 3. Bachelor’s in DevOps -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="server-cog" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2023 – 2024</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="cloud" class="w-5 h-5 text-cyan-400"></i>
-          Bachelor’s in DevOps
-        </h3>
-        <p class="text-gray-300 font-medium">Claude Bernard Lyon 1 University</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          Specialized in DevOps automation, CI/CD pipelines, containerization, and infrastructure as code (IaC).
-          Focused on bridging development and operations to achieve continuous delivery and scalable systems.
+    <!-- ⚙️ Bachelor DevOps -->
+    <div class="timeline-item fade-in">
+      <img src="assets/images/lyon1_logo.webp" alt="Lyon 1 DevOps" class="edu-logo">
+      <div class="edu-content">
+        <h3>⚙️ Bachelor’s in DevOps – Claude Bernard Lyon 1 University</h3>
+        <p class="edu-date">2023 – 2024</p>
+        <p>
+          Specialized in <span class="highlight">automation</span>, 
+          <span class="highlight">CI/CD</span>, 
+          <span class="highlight">containerization</span>, and 
+          <span class="highlight">Infrastructure as Code</span>.
+          Bridging development and operations to enable continuous delivery.
         </p>
       </div>
     </div>
 
-    <!-- 4. Bachelor’s in Computer Engineering -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="terminal" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2023 – 2024</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="monitor" class="w-5 h-5 text-cyan-400"></i>
-          Bachelor’s in Computer Engineering
-        </h3>
-        <p class="text-gray-300 font-medium">High Tech School – Rabat</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          Program focused on software development, databases, and system architecture.
-          Combines theoretical and hands-on experience in software design and deployment.
+        <!-- 💼 Bachelor in IT Development -->
+
+ <div class="timeline-item fade-in">
+      <img src="assets\images\hightech_logo.jpeg" alt="HighTech Logo" class="edu-logo">
+      <div class="edu-content">
+        <h3>🧠 Bachelor’s in Computer Engineering – HighTech School Rabat</h3>
+        <p class="edu-date">2023 – 2024</p>
+        <p>
+          Specialized in <span class="highlight">software design</span>, <span class="highlight">databases</span>, and 
+          <span class="highlight">algorithmic logic</span>.  
+          Built solid foundations in programming, system analysis, and modern web technologies.
+        </p>
+      </div>
+    </div>
+    
+    
+    <!-- 💼 Bachelor in IT Development -->
+    <div class="timeline-item fade-in">
+      <img src="assets/images/miage_logo.png" alt="MIAGE Logo" class="edu-logo">
+      <div class="edu-content">
+        <h3>💼 Associate’s degree in Software Development – MIAGE School</h3>
+        <p class="edu-date">2021 – 2023</p>
+        <p>
+          Completed a <span class="highlight">Associate’s degree in Software Development</span> 
+          at <span class="highlight">MIAGE – School of Marketing and Applied Informatics</span>.
+          Focused on <span class="highlight">software development</span>, 
+          <span class="highlight">database management</span>, and 
+          <span class="highlight">agile methodologies</span>.
         </p>
       </div>
     </div>
 
-    <!-- 5. Specialized Technician -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="settings" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2021 – 2023</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="code-xml" class="w-5 h-5 text-cyan-400"></i>
-          Specialized Technician in Software Development
-        </h3>
-        <p class="text-gray-300 font-medium">MIAGE – School of Marketing and Applied Informatics</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          Practical training in full-stack web and mobile development, database management, and agile project methodologies.
+    <!-- 🌍 DEUG Linguistics -->
+    <div class="timeline-item fade-in">
+      <img src="assets\images\ibno_tofail_logo.jpeg" alt="Ibn Tofail Logo" class="edu-logo">
+      <div class="edu-content">
+        <h3>🌍 Two-Year University Degree in English Language and Linguistics (DEUG) – Ibn Tofail University</h3>
+        <p class="edu-date">2020 – 2023</p>
+        <p>
+          Studied <span class="highlight">linguistics</span>, 
+          <span class="highlight">communication</span>, and 
+          <span class="highlight">Anglo-Saxon culture</span>.
+          Developed strong analytical and communication skills.
         </p>
       </div>
     </div>
 
-    <!-- 6. DEUG in English Linguistics -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="book-open-text" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2020 – 2023</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="message-square-text" class="w-5 h-5 text-cyan-400"></i>
-          Two-Year University Degree in English Language and Linguistics (DEUG)
-        </h3>
-        <p class="text-gray-300 font-medium">Ibn Tofail University – Kenitra</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          Focused on linguistics, phonetics, and Anglo-Saxon culture, enhancing research and communication skills.
+    <!-- ✈️ Aircraft Maintenance -->
+    <div class="timeline-item fade-in">
+      <img src="assets\images\FRA.webp" alt="Royal Air School Logo" class="edu-logo">
+      <div class="edu-content">
+        <h3>✈️ Certificate in Aircraft Maintenance (B1) – Royal Air School Marrakech</h3>
+        <p class="edu-date">2016 – 2019</p>
+        <p>
+          Specialized in <span class="highlight">mechanical systems</span>, 
+          <span class="highlight">hydraulics</span>, and 
+          <span class="highlight">maintenance planning</span>.
+          Gained precision and discipline within the Royal Air Force structure.
         </p>
       </div>
     </div>
 
-    <!-- 7. Aircraft Maintenance -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="wrench" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2016 – 2019</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="cog" class="w-5 h-5 text-cyan-400"></i>
-          Certificate in Aircraft Maintenance Engineering (Category B1)
-        </h3>
-        <p class="text-gray-300 font-medium">Royal Air School – Marrakech</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          Specialized training in mechanical and hydraulic systems, combining technical expertise and military discipline.
-        </p>
-      </div>
-    </div>
-
-    <!-- 8. High School -->
-    <div class="relative">
-      <span class="absolute -left-8 bg-indigo-600 w-6 h-6 rounded-full flex items-center justify-center ring-4 ring-indigo-900">
-        <i data-lucide="school" class="w-3.5 h-3.5 text-white"></i>
-      </span>
-      <div class="ml-4">
-        <p class="text-gray-400 text-sm font-medium">2015 – 2016</p>
-        <h3 class="text-xl font-semibold text-indigo-400 flex items-center gap-2">
-          <i data-lucide="flask-round" class="w-5 h-5 text-cyan-400"></i>
-          Baccalaureate in Physical Sciences
-        </h3>
-        <p class="text-gray-300 font-medium">Omega High School – Fez</p>
-        <p class="mt-2 text-gray-400 text-sm">
-          Scientific curriculum focusing on physics, mathematics, and chemistry.
-          Built strong analytical and logical foundations for higher studies.
+    <!-- 🧪 High School -->
+    <div class="timeline-item fade-in">
+      <img src="assets\images\omegahighschool_logo.jpeg" alt="Omega High School Logo" class="edu-logo">
+      <div class="edu-content">
+        <h3>🧪 Baccalaureate in Physical Sciences – Omega High School Fez</h3>
+        <p class="edu-date">2015 – 2016</p>
+        <p>
+          Scientific foundation in <span class="highlight">physics</span>, 
+          <span class="highlight">mathematics</span>, and 
+          <span class="highlight">chemistry</span>.
+          Built a strong analytical mindset for engineering studies.
         </p>
       </div>
     </div>
 
   </div>
 </section>
+
+
 
 <!-- SKILLS -->
 <section id="skills" class="py-20 bg-gray-800/70 rounded-xl shadow-lg mt-10 backdrop-blur-md">
@@ -646,39 +534,7 @@
 
   </div>
 
-  <script>
-    lucide.createIcons();
-  </script>
-  
-  <!-- Animated Title -->
-  <script>
-    const titles = [
-      "🚀 Yassine Nakkabi | DevOps Engineer",
-      "⚙️ Automate. Deploy. Innovate.",
-      "☁️ Cloud & CI/CD Specialist",
-      "💻 Building Scalable Futures"
-    ];
-    let index = 0;
-    function changeTitle() {
-      document.title = titles[index];
-      index = (index + 1) % titles.length;
-    }
-    setInterval(changeTitle, 3000);
-    document.title = titles[0];
-  </script>
-  <script>
-    lucide.createIcons();
-    const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-      menuBtn.classList.toggle("open");
-      if (!mobileMenu.classList.contains("hidden")) {
-        mobileMenu.classList.add("animate-slideDown");
-      } else {
-        mobileMenu.classList.remove("animate-slideDown");
-      }
-    });
-  </script>
+  <script src="assets/js/script.js"></script>
+
 </body>
 </html>
