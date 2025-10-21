@@ -87,3 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (count >= target) clearInterval(interval);
   }, 150);
 });
+
+
+
+
