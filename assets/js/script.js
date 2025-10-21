@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (i < number.length) {
       phoneSpan.textContent += number.charAt(i);
       i++;
-      setTimeout(type, 100);
+      setTimeout(type, 150);
     }
   }
 
@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const ageDisplay = document.getElementById("age-display");
   let count = 0;
-  const target = 28;
+  const target = 29;
   const interval = setInterval(() => {
     count++;
     ageDisplay.textContent = count;
     if (count >= target) clearInterval(interval);
-  }, 80);
+  }, 150);
 });
